@@ -1,0 +1,121 @@
+:root {
+  --black: #343231;
+  --blue: #083a50;
+  --dgreen: rgb(34, 151, 122, 0.15);
+  --green: #26b893;
+  --grey: #8f91b0;
+  --lgrey: #dff3ea;
+  --white: #e8eaee;
+  --pwhite: #fff;
+  /* --dpurple: #2d1863; */
+  /* --lpurple: #8f91b0; */
+  --content-width: 1440px;
+  --ff-header: Preahvihear, sans-serif;
+  --ff-body: Poppins, sans-serif;
+  --br: 12px;
+  --bs: rgba(18, 18, 18, 0.35) 0px 5px 15px;
+  --bs-sm: rgba(18, 18, 18, 0.2) 0px 7px 29px 0px;
+  --fs-sm: 16px;
+  --fs-body: 18px;
+  --fs-h1: 60px;
+  --fs-h2: 50px;
+  --fs-h3: 30px;
+  --gap: 3rem;
+}
+@media only screen and (max-width: 624px) {
+  :root {
+    --fs-h1: 50px;
+    --fs-h2: 40px;
+    --fs-h3: 25px;
+  }
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  font-size: var(--fs-body);
+  color: var(--blue);
+  font-family: var(--fs-body);
+  line-height: 1.4;
+}
+.container {
+  margin: 0 auto;
+  max-width: var(--content-width);
+  width: 100%;
+  padding: 0 2rem;
+}
+.container:not(:first-child) {
+  padding: 4rem 2rem;
+}
+@media only screen and (max-width: 868px) {
+  .container:not(:first-child) {
+    padding: 2rem 1rem;
+  }
+}
+@media only screen and (max-width: 624px) {
+  .container {
+    padding: 0 1rem;
+  }
+  .project-section {
+    padding: 4rem 1rem;
+    background-color: var(--lgrey);
+  }
+}
+/* button styles */
+.primary-btn {
+  border-radius: var(--br);
+  background-color: var(--green);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  transition: all 0.25s ease-in-out;
+}
+.primary-btn:hover {
+  box-shadow: var(--bs);
+  scale: 1.1;
+}
+.primary-btn:active {
+  box-shadow: var(--bs-sm);
+  opacity: 0.8;
+  scale: 1.05;
+}
+.secondary-btn {
+  height: var(--btn);
+  cursor: pointer;
+  border: 2px solid var(--grey);
+  background-color: transparent;
+  color: var(--grey);
+  border-radius: var(--br);
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  transition: all 0.25s ease-in-out;
+}
+.secondary-btn:hover {
+  box-shadow: var(--bs-sm);
+  scale: 1.1;
+}
+.secondary-btn:active {
+  opacity: 0.8;
+  scale: 1.05;
+}
+.section-title {
+  font-size: var(--fs-h2);
+  color: var(--dpurple);
+  margin: 0 0 4rem 0;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  flex-direction: column;
+  align-items: center;
+}
+.section-title:after {
+  content: "";
+  display: block;
+  position: relative;
+  height: 5px;
+  width: 55px;
+  background: var(--green);
+  border-radius: 5px;
+  top: 6px;
+}

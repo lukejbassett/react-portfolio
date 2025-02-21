@@ -1,0 +1,49 @@
+.work-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+  }
+  .work-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    gap: 1rem;
+    background-color: var(--lgrey);
+    border-radius: var(--br);
+    padding: 1rem;
+  }
+  @media only screen and (max-width: 512px) {
+    .work-card {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .work-card img {
+    max-width: 120px;
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+  }
+  .card-content * {
+    margin: 0;
+  }
+  .card-title {
+    font-weight: 600;
+    font-size: var(--fs-h3);
+  }
+  .card-title span {
+      font-style: italic;
+      font-weight: 400;
+  }
+  .card-time {
+    margin-bottom: 1rem;
+    font-style: italic;
+    color: var(--grey);
+  }
+  .card-desc {
+    line-height: 1.6;
+    font-size: var(--fs-sm);
+  }
+  

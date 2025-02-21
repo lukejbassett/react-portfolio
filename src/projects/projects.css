@@ -1,0 +1,39 @@
+.project-section {
+    padding: 4rem 2rem;
+    background-color: var(--lgrey);
+  }
+  @media only screen and (max-width: 624px) {
+    .project-section {
+      padding: 4rem 0.5rem;
+      background-color: var(--lgrey);
+    }
+  }
+  .project-cards {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .project-card {
+    max-width: 400px;
+    width: 100%;
+    color: var(--blue);
+    background-color: var(--dgreen);
+    padding: 1rem;
+    border-radius: var(--br);
+  }
+  .project-card h2 {
+    color: var(--blue);
+    font-weight: 600;
+    font-size: var(--fs-h3);
+  }
+  .project-card p:first-of-type {
+    font-style: italic;
+    color: var(--blue);
+    margin-bottom: 1rem;
+  }
+  .card-content p:nth-child(3) {
+    margin-bottom: 2rem;
+  }
+  
